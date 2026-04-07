@@ -1,7 +1,7 @@
 import './styles/style.css'
 import './App.css';
 import {Homepage} from "./Pages/Homepage.js"
-import {About} from "./Pages/About.js"
+
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       
       
       <Homepage/>
-      <About/>
+
     </div>
   );
 }

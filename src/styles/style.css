@@ -3,6 +3,8 @@
   z-index: 11;
   position: fixed;
   background-color: rgba(26, 26, 26, 0.792);
+  justify-content: center;
+  align-items: center;
 }
 .removeListDecor {
   list-style: none;
@@ -17,20 +19,46 @@
 .margin10 {
   margin: 10px;
 }
+.flexWrapper {
+  display: flex;
+  flex-wrap: wrap;
 
+  margin: 100px;
+}
 .inline {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .space_medium {
   padding: 25px;
 }
+.caseCardItem {
+  width: 400px;
+  height: 420px;
+  margin: 20px;
+  overflow:hidden;
+}
+.checkThisCase {
 
-.color_phantom {
-  background-color: rgba(26, 26, 26, 0.791);
+  
+  font-size: 18px;
+  font-weight: 600;
+    color: rgb(118, 113, 19);
+  
 }
 
+.flexAlignRight{
+  align-self:flex-end;
+}
+.color_phantom {
+  background-color: rgba(26, 26, 26, 0.748);
+}
+#topBarList {
+  display: flex;
+  justify-content: center;
+}
 .width100 {
   width: 100%;
 }
@@ -46,8 +74,9 @@
   margin: 0px;
 }
 .font_size_20 {
-  font-size: 20px;
+  font-size: 1.3vw;
 }
+
 .dec_none {
   text-decoration: none;
 }
@@ -60,7 +89,7 @@
   color: rgb(234, 222, 4);
 }
 #topbar li:hover {
-  background-color: rgb(4, 4, 4);
+  background-color: rgba(4, 4, 4, 0.123);
   opacity: 100%;
   transition: all 1s;
 }
@@ -102,7 +131,7 @@
 }
 
 .top100 {
-  top: 100px;
+  top: 30px;
 }
 
 .left30 {
@@ -144,14 +173,18 @@
   z-index: 10;
   width: 40%;
 }
+#introTextLeft {
+  font-size: 0.8vw;
+}
 #introHeaderLeft {
-  font-size: 50px;
+  font-size: 2.6vw;
   color: white;
   font-weight: bold;
 }
 #introContainer {
+  position: relative;
   display: flex;
-  height: 1000px;
+  height: 800px;
   color: white;
   align-items: center;
   justify-content: center;
@@ -205,14 +238,20 @@
 }
 
 .bigYellowNumbers {
-  font-size: 70px;
+  font-size: 4vw;
   color: rgb(234, 222, 4);
   font-weight: bold;
 }
 
 .smallerText {
-  font-size: 16px;
+  font-size: 1.1vw;
   color: white;
+}
+.cardExplanatoryText {
+  font-size: 12px;
+  font-weight: 200;
+  color: white;
+  padding: 10px;
 }
 
 #firstElem {
@@ -243,7 +282,7 @@
 
 #imgContainer {
   width: 100%;
-  height: 100%;
+  height: 800px;
 
   position: absolute;
 }
@@ -251,18 +290,18 @@
 #imgContainer img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   z-index: -1;
 }
 
 #about {
-  height: 900px;
+  height: 100%;
 }
 
 #aboutComponent1_1 {
   display: flex;
   margin: 20px;
-  font-size: 20px;
+  font-size: 2.2vw;
   font-weight: bold;
   color: grey;
   opacity: 0.5;
@@ -284,7 +323,7 @@
   display: flex;
   color: black;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 3.2vw;
   width: 40%;
   height: 100px;
   margin: 20px;
@@ -292,7 +331,7 @@
 #aboutComponent2_2 {
   color: rgb(143, 140, 140);
 
-  font-size: 14px;
+  font-size: 1.4vw;
   height: 100px;
   margin: 20px;
   width: 40%;
@@ -303,18 +342,16 @@
   justify-content: space-evenly;
 }
 
-#aboutComponent3_1 {
-  color: rgba(190, 42, 42, 0.792);
+.aboutComponent3_1 {
   display: flex;
   font-size: 70px;
   font-weight: bolder;
-  width: 25%;
+  width: 250px;
   height: 400px;
-
   flex-direction: column;
 }
 
-#aboutComponent3_1 #num {
+.aboutComponent3_1 .num {
   color: grey;
   display: flex;
   font-size: 70px;
@@ -326,6 +363,9 @@
   flex-direction: column;
 }
 
+.boxShadow {
+  box-shadow: 5px 5px 10px rgb(2, 2, 2);
+}
 #componentCard {
   display: flex;
   flex-direction: column;
@@ -333,7 +373,8 @@
   justify-content: left;
   background-color: rgba(26, 26, 26, 0.791);
   border-radius: 10px;
-  height: 100%;
+  height: 300px;
+  overflow: hidden;
   box-shadow: 5px 5px 10px black;
 }
 
@@ -359,4 +400,219 @@
 #componentCard:hover {
   background-color: rgba(26, 26, 26, 0.593);
   transition: 0.5s all;
+}
+.checkThisCase img{
+margin:10px;
+width:50px !important;
+height:50px !important;
+background-color: rgb(234, 222, 4);
+border-radius: 10px;
+}
+.checkThisCase img:hover{
+margin:10px;
+width:50px !important;
+height:50px !important;
+background-color: rgb(234, 222, 4);
+border-radius: 10px;
+scale:1.1;
+transition:all 0.3s;
+}
+.caseCardItem h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  padding: 5px;
+}
+#firstItemCardList h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.848);
+  padding: 5px;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 10px;
+}
+
+#firstItemCardList .explainText {
+  color: rgb(234, 222, 4);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.explainText {
+  color: grey;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px;
+}
+.caseCardItem h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(118, 113, 19);
+  margin: 0px;
+}
+
+.caseCardItem img {
+  width: 100%;
+  height: 250px;
+}
+.logoFont {
+  font-size: 20px;
+}
+.caseCardItem:hover {
+  background-color: rgba(146, 141, 141, 0.748);
+  transition: all 0.3s;
+  
+}
+
+.yellowCardBorder {
+  border: yellow 1px solid;
+}
+.blackCardBorder {
+  border: black 2px solid;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logoContainer h1 {
+  padding: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+  .logoContainer {
+    display: flex;
+    left: 20px;
+  }
+  .logoContainer img {
+    width: 70px;
+  }
+  .logoContainer h1 {
+    font-size: 16px;
+  }
+  #aboutComponent2_2 {
+    font-size: 18px;
+  }
+  #aboutComponent2_1 {
+    font-size: 45px;
+  }
+  #aboutComponent1_1 {
+    font-size: 30px;
+  }
+  .aboutComponent3_1 {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .logoContainer {
+    display: flex;
+    left: 20px;
+  }
+  .logoContainer img {
+    width: 70px;
+  }
+  .logoContainer h1 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .logoContainer {
+    display: flex;
+    left: 20px;
+  }
+  .logoContainer img {
+    width: 60px;
+  }
+  .logoContainer h1 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .logoContainer {
+    display: flex;
+    left: 5px;
+  }
+  .logoContainer img {
+    width: 50px;
+  }
+  .logoContainer h1 {
+    font-size: 14px;
+  }
+  #topBarList li {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .logoContainer {
+    display: flex;
+    left: 5px;
+    pointer-events: auto;
+  }
+  .logoContainer img {
+    width: 60px;
+  }
+  .logoContainer h1 {
+    font-size: 18px;
+  }
+  #topBarList li {
+    font-size: 16px;
+  }
+  #topbar ul {
+    flex-direction: column;
+  }
+  #topbar {
+    flex-direction: column;
+  }
+  .borderLeftRight {
+    border: none;
+  }
+  .logoContainer {
+    position: relative;
+    width: 100%;
+    left: 0px;
+  }
+  ul,
+  li,
+  a {
+    width: 100%;
+  }
+  #aboutComponent3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hidden {
+  display: none;
+  width: 0px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 950px) {
+  #aboutComponent2_2 {
+    font-size: 13px;
+  }
+  #aboutComponent2_1 {
+    font-size: 30px;
+  }
+  #aboutComponent1_1 {
+    font-size: 20px;
+  }
 }
