@@ -20,7 +20,7 @@ export class CardCase extends Component {
 
   render() {
     return (
-      <div>
+      <div id="cases">
         <ul className="removeListDecor inline flexWrapper">
           <li id = "firstItemCardList" className="caseCardItem boxShadow color_phantom ">
 

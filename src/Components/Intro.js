@@ -22,10 +22,11 @@ export class Intro extends Component {
           </div>
           <div id="introButtonsLeft">
             <button class="relSize_25X40 buttonStylePhantom margin_10 color_white">
-              Ask Question
+              <a>   Ask Question</a>
+           
             </button>
             <button class="relSize_25X40 buttonStyleYellow margin_10">
-              Our Works
+              <a href="#cases">Our Works</a>
             </button>
           </div>
         </div>
