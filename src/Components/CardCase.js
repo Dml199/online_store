@@ -21,58 +21,73 @@ export class CardCase extends Component {
   render() {
     return (
       <div id="cases">
-        <ul className="removeListDecor inline flexWrapper">
-          <li id = "firstItemCardList" className="caseCardItem boxShadow color_phantom ">
-
+        <ul className="removeListDecor inline flexWrapper color_phantom">
+          <li className="caseCardItem boxShadow color_phantom itemCardList">
             <img src="house.jpeg"></img>
-            <div className= "flexColumn">
-            <div className = "explainText">TOWNHOUSE</div>
-            <h4>{this.placeholderText}</h4>
-            <div className = ""></div>
-            <div className = "checkThisCase inline color_yellow flexAlignRight">Details <img src = "learnMore.svg"></img></div>
+            <div className="flexColumn">
+              <div className="explainText">TOWNHOUSE</div>
+              <h4>{this.placeholderText}</h4>
+              <div className=""></div>
+              <div className="checkThisCase inline  flexAlignRight">
+                Details <img src="learnMore.svg"></img>
+              </div>
             </div>
           </li>
-          <li className="caseCardItem boxShadow">
+          <li className="caseCardItem boxShadow color_phantom itemCardList">
             <img src="hotel.jpeg"></img>
-            <div className= "flexColumn">
-            <div className = "explainText">HOTEL</div>
-            <h4>{this.placeholderText}</h4>
-            <div className = ""></div>
-            <div className = "checkThisCase inline flexAlignRight">Details <img src = "learnMore.svg"></img></div>
+            <div className="flexColumn">
+              <div className="explainText">HOTEL</div>
+              <h4>{this.placeholderText}</h4>
+              <div className=""></div>
+              <div className="checkThisCase inline flexAlignRight">
+                Details <img src="learnMore.svg"></img>
+              </div>
             </div>
           </li>
-          <li className="caseCardItem boxShadow">
+          <li className="caseCardItem boxShadow color_phantom itemCardList">
             <img src="villa.jpeg"></img>
-            <div className= "flexColumn">
-            <div className = "explainText">VILLA</div>
-            <h4>{this.placeholderText}</h4>
-            <div className = ""></div>
-            <div className = "checkThisCase inline  flexAlignRight">Details <img src = "learnMore.svg"></img></div>
-            </div></li>
-          <li className="caseCardItem boxShadow">
+            <div className="flexColumn">
+              <div className="explainText">VILLA</div>
+              <h4>{this.placeholderText}</h4>
+              <div className=""></div>
+              <div className="checkThisCase inline  flexAlignRight">
+                Details <img src="learnMore.svg"></img>
+              </div>
+            </div>
+          </li>
+          <li className="caseCardItem boxShadow color_phantom itemCardList">
             <img src="hotel_2.jpeg"></img>
-           <div className= "flexColumn">
-            <div className = "explainText">HOTEL</div>
-            <h4>{this.placeholderText}</h4>
-            <div className = ""></div>
-            <div className = "checkThisCase inline  flexAlignRight">Details <img src = "learnMore.svg"></img></div>
-            </div></li>
-          <li className="caseCardItem boxShadow">
+            <div className="flexColumn">
+              <div className="explainText">HOTEL</div>
+              <h4>{this.placeholderText}</h4>
+              <div className=""></div>
+              <div className="checkThisCase inline  flexAlignRight">
+                Details <img src="learnMore.svg"></img>
+              </div>
+            </div>
+          </li>
+          <li className="caseCardItem boxShadow color_phantom itemCardList">
             <img src="house_2.jpeg"></img>
-           <div className= "flexColumn">
-            <div className = "explainText">HOUSES</div>
-            <h4>{this.placeholderText}</h4>
-            <div className = ""></div>
-            <div className = "checkThisCase inline  flexAlignRight">Details <img src = "learnMore.svg"></img></div>
-            </div></li>
-          <li className="caseCardItem boxShadow">
+            <div className="flexColumn">
+              <div className="explainText">HOUSES</div>
+              <h4>{this.placeholderText}</h4>
+              <div className=""></div>
+              <div className="checkThisCase inline  flexAlignRight">
+                Details <img src="learnMore.svg"></img>
+              </div>
+            </div>
+          </li>
+          <li className="caseCardItem boxShadow color_phantom itemCardList">
             <img src="townhouse_2.jpeg"></img>
-            <div className= "flexColumn">
-            <div className = "explainText">SOLUTIONS</div>
-            <h4>{this.placeholderText}</h4>
-            <div className = ""></div>
-            <div className = "checkThisCase inline flexAlignRight">Details <img src = "learnMore.svg"></img></div>
-            </div></li>
+            <div className="flexColumn">
+              <div className="explainText">SOLUTIONS</div>
+              <h4>{this.placeholderText}</h4>
+              <div className=""></div>
+              <div className="checkThisCase inline flexAlignRight">
+                Details <img src="learnMore.svg"></img>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     );

@@ -9,7 +9,13 @@
 .removeListDecor {
   list-style: none;
 }
-
+#cases ul {
+  margin: 0px;
+  padding: 100px;
+}
+#about {
+  padding-bottom: 100px;
+}
 #topbar li {
   border: 1px rgba(255, 0, 0, 0) solid;
 }
@@ -38,19 +44,17 @@
   width: 350px;
   height: 420px;
   margin: 20px;
-  overflow:hidden;
+  overflow: hidden;
+  min-width: 350px !important;
 }
 .checkThisCase {
-
-  
   font-size: 18px;
   font-weight: 600;
-    color: rgb(118, 113, 19);
-  
+  color: rgb(118, 113, 19);
 }
 
-.flexAlignRight{
-  align-self:flex-end;
+.flexAlignRight {
+  align-self: flex-end;
 }
 .color_phantom {
   background-color: rgba(26, 26, 26, 0.748);
@@ -303,7 +307,7 @@
   margin: 20px;
   font-size: 2.2vw;
   font-weight: bold;
-  color: grey;
+  color: rgb(255, 252, 252);
   opacity: 0.5;
   width: 40%;
 }
@@ -321,7 +325,7 @@
 }
 #aboutComponent2_1 {
   display: flex;
-  color: black;
+
   font-weight: bold;
   font-size: 3.2vw;
   width: 40%;
@@ -401,29 +405,25 @@
   background-color: rgba(26, 26, 26, 0.593);
   transition: 0.5s all;
 }
-.checkThisCase img{
-margin:10px;
-width:50px !important;
-height:50px !important;
-background-color: rgb(234, 222, 4);
-border-radius: 10px;
+
+.checkThisCase img {
+  margin: 10px;
+  width: 50px !important;
+  height: 50px !important;
+  background-color: rgb(234, 222, 4);
+  border-radius: 10px;
 }
-.checkThisCase img:hover{
-margin:10px;
-width:50px !important;
-height:50px !important;
-background-color: rgb(234, 222, 4);
-border-radius: 10px;
-scale:1.1;
-transition:all 0.3s;
+.checkThisCase img:hover {
+  margin: 10px;
+  width: 50px !important;
+  height: 50px !important;
+  background-color: rgb(234, 222, 4);
+  border-radius: 10px;
+  scale: 1.1;
+  transition: all 0.3s;
 }
-.caseCardItem h4 {
-  font-size: 15px;
-  font-weight: 500;
-  color: black;
-  padding: 5px;
-}
-#firstItemCardList h4 {
+
+.ItemCardList h4 {
   font-size: 15px;
   font-weight: 500;
   color: rgba(245, 245, 245, 0.848);
@@ -437,7 +437,7 @@ transition:all 0.3s;
   margin: 10px;
 }
 
-#firstItemCardList .explainText {
+.ItemCardList .explainText {
   color: rgb(234, 222, 4);
   font-size: 24px;
   font-weight: bold;
@@ -445,7 +445,7 @@ transition:all 0.3s;
 }
 
 .explainText {
-  color: grey;
+  color: rgb(218, 212, 212);
   font-size: 24px;
   font-weight: bold;
   padding: 5px;
@@ -453,7 +453,7 @@ transition:all 0.3s;
 .caseCardItem h4 {
   font-size: 15px;
   font-weight: 500;
-  color: rgb(118, 113, 19);
+  color: rgb(226, 217, 37);
   margin: 0px;
 }
 
@@ -467,7 +467,6 @@ transition:all 0.3s;
 .caseCardItem:hover {
   background-color: rgba(146, 141, 141, 0.748);
   transition: all 0.3s;
-  
 }
 
 .yellowCardBorder {
@@ -555,7 +554,9 @@ transition:all 0.3s;
     font-size: 12px;
   }
 }
-
+#about {
+  background-color:;
+}
 @media screen and (max-width: 950px) {
   .logoContainer {
     display: flex;
@@ -585,11 +586,7 @@ transition:all 0.3s;
     width: 100%;
     left: 0px;
   }
-  ul,
-  li,
-  a {
-    width: 100%;
-  }
+
   #aboutComponent3 {
     flex-direction: column;
     justify-content: center;
@@ -615,4 +612,106 @@ transition:all 0.3s;
   #aboutComponent1_1 {
     font-size: 20px;
   }
+}
+
+#contacts {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  background-color: rgb(24, 23, 23);
+  height: 500px;
+}
+
+#firstSectionContacts {
+  display: flex;
+
+  flex-direction: column;
+}
+.font40px {
+  font-size: 40px;
+}
+#section1_1Contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 30px;
+  color: yellow;
+}
+
+#section1_2Contacts {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  color: yellow;
+  margin: 20px;
+}
+.whiteText18px {
+  color: rgb(225, 225, 207);
+  font-size: 18px;
+}
+
+.margin20 {
+  margin: 20px;
+}
+#secondSectionContacts {
+  color: yellow;
+display:flex;
+  flex-direction: column;
+
+}
+
+.ContactsSVG {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: yellow;
+
+  border-radius: 40px;
+}
+#contactLogos {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: start;
+  justify-content: stretch;
+}
+.marginRight40px {
+  margin-right: 40px;
+}
+.marginLeft0 {
+  margin-left: 0px !important;
+}
+
+.ContactsSVG:hover {
+  background-color: rgb(87, 85, 85);
+  transition: all 0.5s ease;
+}
+
+#secondSectionContacts input,
+textarea {
+
+  width: 100% !important;
+  height: 30px;
+  margin: 10px;
+
+}
+#secondSectionContacts button {
+  width: 120px;
+  height: 30px;
+  margin: 10px;
+  background-color: yellow;
+}
+#secondSectionContacts {
+width:40%;}
+
+#mailContent {
+  height: 150px !important;
+
+}
+#secondSectionContactsText{
+align-self:start;
+}
+
+#secondSectionContacts button{
+align-self:start;
 }

@@ -4,8 +4,9 @@ import {CardCase} from "../Components/CardCase.js"
 export class Cases extends Component {
   render() {
     return (
-      <div>
+      <div className="color_phantom">
         <IntroHeader
+        style = ""
           listHeader="OUR CASES"
           sectionTwoHeader="Construction portfolio"
           sectionTwoText = ""

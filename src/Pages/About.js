@@ -4,8 +4,8 @@ import {IntroHeader} from "../Components/IntroHeader.js";
 export class About extends Component {
   render() {
     return (
-      <div id="about">
-      <IntroHeader listHeader = "HOW WE WORK" sectionTwoHeader = "Our Working Approach" sectionTwoText = " dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+      <div id="about" >
+      <IntroHeader listHeader = "HOW WE WORK" sectionTwoHeader = "Our Working Approach" style = "black" sectionTwoText = " dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
             eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
             parturient montes, nascetur ridiculus mus. Donec quam felis"/>
 
